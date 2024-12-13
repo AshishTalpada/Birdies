@@ -1,0 +1,164 @@
+/* Jayati Dalwadi
+Student Id Number - 8929331  */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F9F9F9; 
+    color: #333333; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about-container {
+    width: 100%; 
+    max-width: 100%; 
+    padding: 0 20px; /* Consistent side padding */
+    line-height: 1.6;
+}
+
+.about-container h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Video Section */
+.about-video {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.about-video h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-video video {
+    max-width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Events Section */
+.events, .memorial-places {
+    margin: 40px 0;
+    padding: 0 20px; /* Consistent padding */
+}
+
+.events h3, .memorial-places h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.events ul, .memorial-places ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.events li, .memorial-places li {
+    background-color: #FFFFFF; /* Clean white for card background */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 15px;
+}
+
+.events li:hover, .memorial-places li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.events img, .memorial-places img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.events li strong, .memorial-places li strong {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: block;
+    color: #333;
+}
+
+.events li p, .memorial-places li p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Website Insights Section */
+.website-insights {
+    background-color: #FF9B9B; /* Light peach background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.website-insights h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.website-insights ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #FFFFFF;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.website-insights ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.website-insights ul li:before {
+    content: '\2022';
+    color: #FF6B6B; /* Soft coral for bullets */
+    font-weight: bold;
+    display: inline-block;
+    width: 20px;
+    margin-left: -20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-video video {
+        width: 100%;
+    }
+
+    .events ul, .memorial-places ul {
+        grid-template-columns: 1fr;
+    }
+
+    .website-insights ul {
+        padding-left: 10px;
+    }
+}

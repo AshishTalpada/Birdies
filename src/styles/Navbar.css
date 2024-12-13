@@ -1,0 +1,74 @@
+/* Ashishkumar Talpada
+Student Number - 8909834 */
+
+/* Navbar Styles */
+.navbar {
+    background-color: #B8D8E6; 
+    padding: 20px 40px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+  }
+  
+  /* Title (Birdes) */
+  .navbar h1 {
+    font-family: 'Merriweather', serif; 
+    font-size: 2.5rem;
+    color: #2D3748; 
+    letter-spacing: 2px;
+    text-align: center; 
+    flex-grow: 1; 
+    margin-right: -300px; 
+  }
+  
+  /* Navigation Menu */
+  .navbar ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px; 
+    margin: 0; 
+    justify-content: flex-start; 
+  }
+  
+  .navbar li {
+    font-family: 'Roboto', sans-serif; 
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    color: #2D3748; 
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar li a:hover {
+    color: #FF6B6B; 
+    transform: translateY(-3px); 
+  }
+  
+  /* Responsive Styles for Smaller Screens */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; 
+      padding: 15px 20px;
+    }
+  
+    .navbar h1 {
+      font-size: 2rem; 
+      text-align: center;
+      margin-bottom: 10px; 
+    }
+  
+    .navbar ul {
+      flex-direction: column; 
+      gap: 15px;
+      align-items: center;
+    }
+  
+    .navbar li a {
+      font-size: 1.2rem; 
+    }
+  }
+  

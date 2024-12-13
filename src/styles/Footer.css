@@ -1,0 +1,50 @@
+/* Ashishkumar Talpada
+Student Number - 8909834 */
+
+.footer {
+    background-color: #000000ad; /* Deep blue background */
+    color: white; 
+    text-align: center;
+    padding: 0.2rem 0; 
+    width: 100%;
+    font-family: 'Roboto', sans-serif; 
+  }
+  
+  .footer p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #FF6600; 
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    color: #FF9B9B; 
+    margin: 0 15px; 
+    font-size: 1.8rem; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+  }
+  
+  .social-icons a:hover {
+    color: #FF6600; 
+    transform: scale(1.1); 
+  }
+  
+  .social-icons a.facebook:hover {
+    color: #3b5998; /* Facebook blue */
+  }
+  
+  .social-icons a.twitter:hover {
+    color: #1da1f2; /* Twitter blue */
+  }
+  
+  .social-icons a.instagram:hover {
+    color: #e1306c; /* Instagram pink */
+  }
+  
+  .social-icons a.linkedin:hover {
+    color: #0077b5; /* LinkedIn blue */
+  }
+  
